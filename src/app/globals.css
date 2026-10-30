@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --lime: #C6F42A;
+    --black: #000000;
+    --dark: #111111;
+    --muted: #666666;
+    --border: #E5E5E5;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #111111;
+    font-family: var(--font-inter), sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat), sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--lime);
+    outline-offset: 2px;
+  }
+}
+
+/* Neon Lime Button */
+.btn-lime {
+  background-color: #C6F42A;
+  color: #111111;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 200ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.btn-lime:hover {
+  background-color: #b3de21;
+  transform: translateY(-1px);
+}
+
+.btn-lime:active {
+  transform: translateY(0);
+}
+
+/* White Pill Button */
+.btn-white-pill {
+  background-color: #FFFFFF;
+  color: #111111;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 9999px;
+  transition: all 200ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-white-pill:hover {
+  background-color: #F0F0F0;
+  transform: scale(1.03);
+}
+
+/* Mountain Graphic Backdrop for Footer */
+.mountain-silhouette {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
